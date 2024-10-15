@@ -1,9 +1,12 @@
 { pkgs, lib, config, inputs, ... }:
 
 {
+  env.DVC_SITE_CACHE_DIR = ".devenv/state/dvc/";
+  
   # https://devenv.sh/packages/
   packages = [ 
-    pkgs.git 
+    pkgs.git
+    pkgs.dvc
   ];
   
   # https://devenv.sh/languages/
