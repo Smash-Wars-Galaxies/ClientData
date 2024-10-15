@@ -1,0 +1,10 @@
+# Set default behavior to mark all files as binary.
+* binary=auto
+
+# Mark all text files as requiring crlf to match windows
+*.cfg text eol=crlf
+*.ini text eol=crlf
+*.vsh text eol=crlf
+*.inc text eol=crlf
+*.fx text eol=crlf
+*.fxh text eol=crlf
