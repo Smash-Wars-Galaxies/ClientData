@@ -1,0 +1,18 @@
+stages:
+  generate_install_manifest:
+    cmd:
+      - python generate_manifest.py manifests/install.json install/ updates/
+    deps:
+      - install
+      - updates
+    outs:
+      - manifests/install.json:
+          cache: false
+  generate_update_manifest:
+    cmd:
+      - python generate_manifest.py manifests/update.json updates/
+    deps:
+      - updates
+    outs:
+      - manifests/update.json:
+          cache: false

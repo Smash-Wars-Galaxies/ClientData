@@ -61,7 +61,7 @@ def update_manifest(directory: Path):
 
 if __name__ == "__main__":
     target = Path(sys.argv[1])
-    assert target.is_file()
+    assert not target.is_dir()
 
     directories = [Path(d) for d in sys.argv[2 : len(sys.argv)]]
     assert all([d.is_dir() for d in directories])

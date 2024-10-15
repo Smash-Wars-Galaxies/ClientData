@@ -1,0 +1,35 @@
+schema: '2.0'
+stages:
+  generate_install_manifest:
+    cmd:
+    - python generate_manifest.py manifests/install.json install/ updates/
+    deps:
+    - path: install
+      hash: md5
+      md5: afb72a6a9c906db41ff7e90d8b0dc82c.dir
+      size: 474630199
+      nfiles: 769
+    - path: updates
+      hash: md5
+      md5: f137b8b1689e46df0fe9c738e6a767d1.dir
+      size: 3026822
+      nfiles: 6
+    outs:
+    - path: manifests/install.json
+      hash: md5
+      md5: d32ec3eb498eed13cf1774df30403c3c
+      size: 189848
+  generate_update_manifest:
+    cmd:
+    - python generate_manifest.py manifests/update.json updates/
+    deps:
+    - path: updates
+      hash: md5
+      md5: f137b8b1689e46df0fe9c738e6a767d1.dir
+      size: 3026822
+      nfiles: 6
+    outs:
+    - path: manifests/update.json
+      hash: md5
+      md5: 102ef9c5b31764a772d84506c18756f5
+      size: 1279
