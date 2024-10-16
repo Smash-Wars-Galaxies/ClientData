@@ -14,17 +14,25 @@
 
   # https://devenv.sh/tasks/
   tasks = {
-    # "devenv:enterShell".after = [ "files:checkout" ];
-    "files:checkout".exec = "dvc checkout";
+    "files:setup-dvc-hooks" = {
+      exec = "dvc install";
+      status = "test -f .git/hooks/post-checkout";
+    };
+    "devenv:enterShell".after = [ "files:setup-dvc-hooks" ];
+    "files:pull".exec = "dvc checkout";
     "files:update".exec = ''
       python update_dvc.py install
       python update_dvc.py updates
+    '';
+    "files:generate-manifest" = {
+        exec = "dvc repro";
+        after = [ "files:update" ];
+    };
+    "files:push".exec = ''
+      dvc push
     '';
   };
 
   # https://devenv.sh/tests/
   enterTest = '''';
-
-  # https://devenv.sh/pre-commit-hooks/
-  # pre-commit.hooks.shellcheck.enable = true;
 }

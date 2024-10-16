@@ -22,6 +22,6 @@ outs:
   path: updates/smash_02.tre
   size: 424622
 - hash: md5
-  md5: 677ab78400c1b226f50f359cd66863d9
+  md5: f5eefd7eba0f865203c87c5b77ba3dac
   path: updates/smash_03.tre
-  size: 2580102
+  size: 2580123
