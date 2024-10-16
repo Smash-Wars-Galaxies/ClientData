@@ -1520,8 +1520,8 @@
         },
         {
             "name": "options.cfg",
-            "size": 515,
-            "md5": "8475737948a2ac725173a8b6b5cb0c7b",
+            "size": 546,
+            "md5": "2a339729b1440cb92217b019f8d0cad7",
             "url": "https://swg.hellafast.io/install/options.cfg"
         },
         {
@@ -1652,44 +1652,44 @@
         },
         {
             "name": "reshade/Shaders/ArcaneBloom.fx",
-            "size": 13363,
-            "md5": "69a7cc7b0cf27ca82b798c3b1131024c",
+            "size": 14043,
+            "md5": "51cb35a58e2cfd6d9bd5d2a769edf139",
             "url": "https://swg.hellafast.io/install/reshade/Shaders/ArcaneBloom.fx"
         },
         {
             "name": "reshade/Shaders/ArcaneBloom.fxh",
-            "size": 3567,
-            "md5": "be52b7bd53e4ee56b801d6d4098017ed",
+            "size": 3728,
+            "md5": "4f8217312c71443cdedc10bc7a325c6a",
             "url": "https://swg.hellafast.io/install/reshade/Shaders/ArcaneBloom.fxh"
         },
         {
             "name": "reshade/Shaders/Curves.fx",
-            "size": 6274,
-            "md5": "5b7a1af1a231a102901de08e5eed739f",
+            "size": 6473,
+            "md5": "7c408e8a674c9d8d162981e23ece6a11",
             "url": "https://swg.hellafast.io/install/reshade/Shaders/Curves.fx"
         },
         {
             "name": "reshade/Shaders/FXAA.fx",
-            "size": 3316,
-            "md5": "ffc0c88c63e320e3da7ae61f7d1378d0",
+            "size": 3443,
+            "md5": "d5dcaa99910370ec11175de641f40488",
             "url": "https://swg.hellafast.io/install/reshade/Shaders/FXAA.fx"
         },
         {
             "name": "reshade/Shaders/FXAA.fxh",
-            "size": 85880,
-            "md5": "21329f400d0f311d4caa3d8f0743be4b",
+            "size": 87927,
+            "md5": "b0e953dd95db55d8b50e718ae98581da",
             "url": "https://swg.hellafast.io/install/reshade/Shaders/FXAA.fxh"
         },
         {
             "name": "reshade/Shaders/FXShaders/AspectRatio.fxh",
-            "size": 834,
-            "md5": "da8422337d893bacb7841b0c6265c4a3",
+            "size": 880,
+            "md5": "1d88b44fd5d704415ed32b57efc49c55",
             "url": "https://swg.hellafast.io/install/reshade/Shaders/FXShaders/AspectRatio.fxh"
         },
         {
             "name": "reshade/Shaders/FocalDOF.fx",
-            "size": 3829,
-            "md5": "29d703dbd794fee18317d277a3f014d4",
+            "size": 4040,
+            "md5": "7765b9267d074d1db52ce19016f0945a",
             "url": "https://swg.hellafast.io/install/reshade/Shaders/FocalDOF.fx"
         },
         {
@@ -1700,14 +1700,14 @@
         },
         {
             "name": "reshade/Shaders/Levels.fx",
-            "size": 2976,
-            "md5": "99950d1967dc50e0827e43b83072f686",
+            "size": 3061,
+            "md5": "08166f4bf092d8e661ea5bcc8a05fb83",
             "url": "https://swg.hellafast.io/install/reshade/Shaders/Levels.fx"
         },
         {
             "name": "reshade/Shaders/Macros.fxh",
-            "size": 21411,
-            "md5": "65662c5dda1e465942c159925f76fae3",
+            "size": 22036,
+            "md5": "9ffced57a26516b311fb73dc9589f009",
             "url": "https://swg.hellafast.io/install/reshade/Shaders/Macros.fxh"
         },
         {
@@ -1718,62 +1718,62 @@
         },
         {
             "name": "reshade/Shaders/ReShade.fxh",
-            "size": 4063,
-            "md5": "86719fb096599511c4e5b56af7ff614d",
+            "size": 4181,
+            "md5": "c1491f25e211a27a5e637649eafa828e",
             "url": "https://swg.hellafast.io/install/reshade/Shaders/ReShade.fxh"
         },
         {
             "name": "reshade/Shaders/ReShadeUI.fxh",
-            "size": 9930,
-            "md5": "a4851a3a31b433f7b608421200067dcf",
+            "size": 10144,
+            "md5": "a921a01e771f91ff86a4ca9160748cd7",
             "url": "https://swg.hellafast.io/install/reshade/Shaders/ReShadeUI.fxh"
         },
         {
             "name": "reshade/Shaders/SMAA.fx",
-            "size": 9480,
-            "md5": "4f02b357d0bda58eb7164aea0f7a11d1",
+            "size": 9805,
+            "md5": "843822f25b4acc8ea1517ac5fe3d1b25",
             "url": "https://swg.hellafast.io/install/reshade/Shaders/SMAA.fx"
         },
         {
             "name": "reshade/Shaders/SMAA.fxh",
-            "size": 57679,
-            "md5": "ee534d68c2208ca432a4fa843708c6b5",
+            "size": 59131,
+            "md5": "63e3f12d6a82dd515851e7905b451581",
             "url": "https://swg.hellafast.io/install/reshade/Shaders/SMAA.fxh"
         },
         {
             "name": "reshade/Shaders/qUINT_bloom.fx",
-            "size": 15469,
-            "md5": "85e7eda2f2afcd480f76f71794ce64ec",
+            "size": 15865,
+            "md5": "027958d8c4c84590ca45957f968d255f",
             "url": "https://swg.hellafast.io/install/reshade/Shaders/qUINT_bloom.fx"
         },
         {
             "name": "reshade/Shaders/qUINT_common.fxh",
-            "size": 7053,
-            "md5": "c000db814d74bcb31db117f5d50c6275",
+            "size": 7252,
+            "md5": "93ff1206cc13f0935c7c108e3a3e3bb8",
             "url": "https://swg.hellafast.io/install/reshade/Shaders/qUINT_common.fxh"
         },
         {
             "name": "reshade/Shaders/qUINT_dof.fx",
-            "size": 25227,
-            "md5": "64cbd93281c31e30091e37ff1c234804",
+            "size": 25987,
+            "md5": "226a65bfea2a7327ab5ee29d2dd583d2",
             "url": "https://swg.hellafast.io/install/reshade/Shaders/qUINT_dof.fx"
         },
         {
             "name": "reshade/Shaders/qUINT_lightroom.fx",
-            "size": 30586,
-            "md5": "47af083783fdc2f99808894bc816ea13",
+            "size": 31465,
+            "md5": "d0fc70e2b2d42e133d6f7f623a9087bc",
             "url": "https://swg.hellafast.io/install/reshade/Shaders/qUINT_lightroom.fx"
         },
         {
             "name": "reshade/Shaders/qUINT_mxao.fx",
-            "size": 26449,
-            "md5": "aebda58b8a6dc25c98a253e1c70622d0",
+            "size": 27154,
+            "md5": "15529f6ce4a04f3ced408577c469fbd5",
             "url": "https://swg.hellafast.io/install/reshade/Shaders/qUINT_mxao.fx"
         },
         {
             "name": "reshade/Shaders/qUINT_sharp.fx",
-            "size": 6389,
-            "md5": "005bd4fb2ba326b09dfef347304ff203",
+            "size": 6579,
+            "md5": "154a7934bc194e401c26f54ed7015385",
             "url": "https://swg.hellafast.io/install/reshade/Shaders/qUINT_sharp.fx"
         },
         {
@@ -4580,8 +4580,8 @@
         },
         {
             "name": "ui/ui_planet_map.inc",
-            "size": 46925,
-            "md5": "419e543371d532818c2af0036ce9a654",
+            "size": 46913,
+            "md5": "b0a7d14eb4c229c5bc717424965a2615",
             "url": "https://swg.hellafast.io/install/ui/ui_planet_map.inc"
         },
         {
@@ -4616,8 +4616,8 @@
         },
         {
             "name": "ui/ui_space_hyperspacemap.inc",
-            "size": 40755,
-            "md5": "e472f85b576ee981609dacc37ecc94ca",
+            "size": 40728,
+            "md5": "0f1c52b34b65bd4aee57b40872bab1e1",
             "url": "https://swg.hellafast.io/install/ui/ui_space_hyperspacemap.inc"
         },
         {

@@ -36,7 +36,7 @@ def generate_file_hashes(root: Path, directory: Path) -> Generator[Entry, None, 
             yield from generate_file_hashes(root, entry)
             continue
 
-        if entry.name == "manifest.json":
+        if entry.name in ["manifest.json", ".gitignore"]:
             continue
 
         yield Entry(

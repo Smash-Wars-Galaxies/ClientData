@@ -217,14 +217,14 @@
 				GetsInput='false'
 				Location='7,24'
 				Name='loading'
-				OnHide='parent.map.visible=true
-parent.bottom.visible=true
-parent.buttonShowGalaxy.visible=true
+				OnHide='parent.map.visible=true
+parent.bottom.visible=true
+parent.buttonShowGalaxy.visible=true
 parent.buttonPurchase.visible=true'
-				OnShow='parent.map.visible=false
-parent.bottom.visible=false
-parent.buttonShowPlanet.visible=false
-parent.buttonShowGalaxy.visible=false
+				OnShow='parent.map.visible=false
+parent.bottom.visible=false
+parent.buttonShowPlanet.visible=false
+parent.buttonShowGalaxy.visible=false
 parent.buttonPurchase.visible=false'
 				PackSize='a,a'
 				ScrollExtent='501,623'
@@ -596,7 +596,7 @@ parent.buttonPurchase.visible=false'
 					Location='2,2'
 					Name='Planets'
 					OnHide='parent.parent.buttonArriveGalactic.visible=visible'
-					OnShow='parent.GalaxyMap.visible=false
+					OnShow='parent.GalaxyMap.visible=false
 parent.parent.buttonArriveGalactic.visible=visible'
 					PackSize='a,a'
 					ScrollExtent='498,482'
@@ -810,7 +810,7 @@ parent.parent.buttonArriveGalactic.visible=visible'
 					Location='2,2'
 					Name='GalaxyMap'
 					OnHide='parent.planetnames.visible=visible'
-					OnShow='parent.Planets.visible=false
+					OnShow='parent.Planets.visible=false
 parent.planetnames.visible=visible'
 					PackSize='a,a'
 					RStyleDefault='rs_default'

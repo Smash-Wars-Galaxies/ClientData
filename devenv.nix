@@ -6,17 +6,21 @@
   # https://devenv.sh/packages/
   packages = [ 
     pkgs.git
-    pkgs.dvc
+    pkgs.dvc-with-remotes
   ];
   
   # https://devenv.sh/languages/
   languages.python.enable = true;
 
   # https://devenv.sh/tasks/
-  # tasks = {
-  #   "myproj:setup".exec = "mytool build";
-  #   "devenv:enterShell".after = [ "myproj:setup" ];
-  # };
+  tasks = {
+    # "devenv:enterShell".after = [ "files:checkout" ];
+    "files:checkout".exec = "dvc checkout";
+    "files:update".exec = ''
+      python update_dvc.py install
+      python update_dvc.py updates
+    '';
+  };
 
   # https://devenv.sh/tests/
   enterTest = '''';

@@ -283,11 +283,11 @@
 						LocalText='[@ui_planet_map:refresh]'
 						Location='7,6'
 						Name='buttonRefresh'
-						OnHide='parent.loading.visible=true
-parent.labelTree.visible=visible
+						OnHide='parent.loading.visible=true
+parent.labelTree.visible=visible
 parent.treebg.enabled=visible'
-						OnShow='parent.loading.visible=false
-parent.labelTree.visible=visible
+						OnShow='parent.loading.visible=false
+parent.labelTree.visible=visible
 parent.treebg.enabled=visible'
 						OpacityRelativeMin='0.80'
 						PackLocation='nfn,nfn'

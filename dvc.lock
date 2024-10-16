@@ -6,30 +6,40 @@ stages:
     deps:
     - path: install
       hash: md5
-      md5: afb72a6a9c906db41ff7e90d8b0dc82c.dir
-      size: 474630199
-      nfiles: 769
+      md5: 3a90eb4dc9dab606e2719350eb35c143.dir
+      size: 474662407
+      nfiles: 770
     - path: updates
       hash: md5
-      md5: f137b8b1689e46df0fe9c738e6a767d1.dir
-      size: 3026822
-      nfiles: 6
+      md5: bba5c70e985b3137d3a982157b62d815.dir
+      size: 3026881
+      nfiles: 7
     outs:
     - path: manifests/install.json
       hash: md5
-      md5: d32ec3eb498eed13cf1774df30403c3c
-      size: 189848
+      md5: 3cc94fa99fe72b9b9a73f97e63444baa
+      size: 189849
   generate_update_manifest:
     cmd:
     - python generate_manifest.py manifests/update.json updates/
     deps:
     - path: updates
       hash: md5
-      md5: f137b8b1689e46df0fe9c738e6a767d1.dir
-      size: 3026822
-      nfiles: 6
+      md5: bba5c70e985b3137d3a982157b62d815.dir
+      size: 3026881
+      nfiles: 7
     outs:
     - path: manifests/update.json
       hash: md5
       md5: 102ef9c5b31764a772d84506c18756f5
       size: 1279
+  update_dvc_files:
+    cmd:
+    - python update_dvc.py ./install
+    - python update_dvc.py ./updates
+  update_dvc_files_install:
+    cmd:
+    - python update_dvc.py ./install
+  update_dvc_files_updates:
+    cmd:
+    - python update_dvc.py ./updates

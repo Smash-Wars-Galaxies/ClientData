@@ -1,0 +1,7 @@
+[core]
+    remote = smashwg
+    autostage = false
+['remote "smashwg"']
+    url = s3://client-files
+    listobjects = true
+    endpointurl = https://s3.hellafast.io

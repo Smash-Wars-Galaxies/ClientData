@@ -1,0 +1,27 @@
+outs:
+- cache: false
+  hash: md5
+  md5: 83fa4bb46cf7d4fa9ecad63b8861a584
+  path: updates/swgemu.cfg
+  size: 132
+- cache: false
+  hash: md5
+  md5: 4cbba2c6abd9c2e506df9ba511dc2791
+  path: updates/swgemu_live.cfg
+  size: 2254
+- hash: md5
+  md5: 2f045f638ae72f8c99a02d3d5028419f
+  path: updates/smash_01.tre
+  size: 17652
+- hash: md5
+  md5: af103a574b9cc050b88f8620a08075eb
+  path: updates/double_attribute.tre
+  size: 2060
+- hash: md5
+  md5: 71ee8a706b20cca1f8a3c6ca2609c539
+  path: updates/smash_02.tre
+  size: 424622
+- hash: md5
+  md5: 677ab78400c1b226f50f359cd66863d9
+  path: updates/smash_03.tre
+  size: 2580102
