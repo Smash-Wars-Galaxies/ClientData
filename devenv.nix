@@ -1,36 +1,64 @@
-{ pkgs, lib, config, inputs, ... }:
-
 {
+  pkgs,
+  lib,
+  config,
+  inputs,
+  ...
+}: let
+  post-checkout = pkgs.writeShellApplication {
+    name = "dvc-post-checkout";
+    runtimeEnv = {
+      DVC_SITE_CACHE_DIR = "${config.devenv.dotfile}/state/dvc";
+    };
+    runtimeInputs = [pkgs.dvc-with-remotes];
+    text = ''exec dvc git-hook post-checkout "$@"'';
+  };
+  pre-commit = pkgs.writeShellApplication {
+    name = "dvc-pre-commit";
+    runtimeEnv = {
+      DVC_SITE_CACHE_DIR = "${config.devenv.dotfile}/state/dvc";
+    };
+    runtimeInputs = [pkgs.dvc-with-remotes];
+    text = ''exec dvc git-hook pre-commit "$@"'';
+  };
+  pre-push = pkgs.writeShellApplication {
+    name = "dvc-pre-push";
+    runtimeEnv = {
+      DVC_SITE_CACHE_DIR = "${config.devenv.dotfile}/state/dvc";
+    };
+    runtimeInputs = [pkgs.dvc-with-remotes];
+    text = ''exec dvc git-hook pre-push "$@"'';
+  };
+in {
   env.DVC_SITE_CACHE_DIR = ".devenv/state/dvc/";
-  
+
   # https://devenv.sh/packages/
-  packages = [ 
+  packages = [
     pkgs.git
     pkgs.dvc-with-remotes
   ];
-  
+
   # https://devenv.sh/languages/
   languages.python.enable = true;
 
   # https://devenv.sh/tasks/
   tasks = {
     "files:setup-dvc-hooks" = {
-      exec = "dvc install";
-      status = "test -f .git/hooks/post-checkout";
+      exec = ''
+        ln -sf ${lib.getExe post-checkout} "${config.devenv.root}/.git/hooks/post-checkout"
+        ln -sf ${lib.getExe pre-commit} "${config.devenv.root}/.git/hooks/pre-commit"
+        ln -sf ${lib.getExe pre-push} "${config.devenv.root}/.git/hooks/pre-push"
+      '';
+      before = ["devenv:enterShell"];
     };
-    "devenv:enterShell".after = [ "files:setup-dvc-hooks" ];
-    "files:pull".exec = "dvc checkout";
     "files:update".exec = ''
       python update_dvc.py install
       python update_dvc.py updates
     '';
     "files:generate-manifest" = {
-        exec = "dvc repro";
-        after = [ "files:update" ];
+      exec = "dvc repro";
+      after = ["files:update"];
     };
-    "files:push".exec = ''
-      dvc push
-    '';
   };
 
   # https://devenv.sh/tests/
