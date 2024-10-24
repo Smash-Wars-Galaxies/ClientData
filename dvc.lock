@@ -11,13 +11,13 @@ stages:
       nfiles: 770
     - path: updates
       hash: md5
-      md5: 2f0dbac270ef24a776452698a738b172.dir
-      size: 3026930
+      md5: d1533f8530ef297be72332e4dac0757b.dir
+      size: 3026924
       nfiles: 7
     outs:
     - path: manifests/install.json
       hash: md5
-      md5: 3b2dd1bb22923acdf2579c6661b7fa45
+      md5: de5cdbd4ee8f7e8a67c88dc5442a4108
       size: 189849
   generate_update_manifest:
     cmd:
@@ -25,13 +25,13 @@ stages:
     deps:
     - path: updates
       hash: md5
-      md5: 2f0dbac270ef24a776452698a738b172.dir
-      size: 3026930
+      md5: d1533f8530ef297be72332e4dac0757b.dir
+      size: 3026924
       nfiles: 7
     outs:
     - path: manifests/update.json
       hash: md5
-      md5: 401bb8901df706d28e1968477a2692fe
+      md5: 8bc9d95e28331a22ff1b38191b7d8f3f
       size: 1279
   update_dvc_files:
     cmd:
